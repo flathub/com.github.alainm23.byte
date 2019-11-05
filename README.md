@@ -1,21 +1,49 @@
-# Flathub
+# Byte
+Rediscover your music
 
-Flathub is the central place for building and hosting Flatpak builds.
+Interact with your music and fall in love with your library all over again.
+Byte offers a beautiful presentation of your Music Library with loads of powerful features in a minimalistic yet highly customizable UI.
 
-Using the Flathub repository
-----------------------------
+## Handy features:
 
-To install applications that are hosted on Flathub, use the following:
+* Light and Dark themes.
+* Add up to 100 items under "Recently Added" for songs.
+* Sort individual playlists by album, title, play count or recently added.
+* Advanced Media Details and Artist Info.
+* Group Playlists, Albums, Artists, Songs, etc.
+* Search, add and play your favorite online radio stations.
+
+<p align="center">
+  <a href="https://appcenter.elementary.io/com.github.alainm23.byte">
+    <img src="https://appcenter.elementary.io/badge.svg" alt="Get it on AppCenter">
+  </a>
+  <a href="https://flathub.org/apps/details/com.github.alainm23.byte"><img height="50" alt="Download on Flathub" src="https://flathub.org/assets/badges/flathub-badge-en.png"/></a>
+</p>
+
+![Byte Screenshot](https://github.com/alainm23/byte/raw/master/data/screenshot/screenshot-01.png)
+
+## Building and Installation
+
+You'll need the following dependencies:
+* libgtk-3-dev
+* libgee-0.8-dev
+* libgstreamer-plugins-base1.0-dev
+* libtagc0-dev
+* libsqlite3-dev
+* libgranite-dev (>=0.5)
+* meson
+* valac >= 0.40.3
+
+## Building  
+
 ```
-flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.gnome.Recipes
+meson build && cd build
+meson configure -Dprefix=/usr
+sudo ninja install
+com.github.alainm23.byte
 ```
 
-For more information and more applications see https://flathub.org
+## Support
+If you like Byte and you want to support its development,consider supporting via [Patreon](https://www.patreon.com/alainm23)
 
-Contributing to Flathub
------------------------
-
-For information on creating packages or reporting issues please see the [contributing page](/CONTRIBUTING.md).
-
-***Note:*** *this repository is not for reporting issues related to the flathub.org website itself or contributing to its development. For that, go to https://github.com/flathub/linux-store-frontend*
+Made with 💗 in Perú

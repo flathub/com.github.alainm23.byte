@@ -53,8 +53,8 @@
             },
             "sources": [{
                 "type": "archive",
-                "url": "https://github.com/alainm23/byte/archive/0.1.17.tar.gz",
-                "sha256": "5673bae5df08c6b123b08280e2b1c9350438c090556af4a07dd29d7066ce69d6"
+                "url": "https://github.com/alainm23/byte/archive/0.1.19.tar.gz",
+                "sha256": "67d7486fca875ffca16b2da11398239fc24c9070f7370183b96e9abca9358174"
             }]
         }
     ]

@@ -51,11 +51,13 @@
                     "--buildtype=release"
                 ]
             },
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/alainm23/byte/archive/0.2.3.tar.gz",
-                "sha256": "5889cc67e261ea136664930c850a4f2b7cb32df89222ffe782b1bb728bbfaf57"
-            }]
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/alainm23/byte.git",
+                    "tag": "0.2.5"
+                }
+            ]
         }
     ]
 }

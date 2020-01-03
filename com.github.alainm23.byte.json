@@ -11,7 +11,9 @@
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland",
-        "--filesystem=host",
+        "--filesystem=home",
+        "--filesystem=xdg-run/dconf",
+        "--filesystem=~/.config/dconf:ro",
         "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
         "--socket=pulseaudio",
@@ -51,13 +53,11 @@
                     "--buildtype=release"
                 ]
             },
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://github.com/alainm23/byte.git",
-                    "tag": "0.2.5"
-                }
-            ]
+            "sources": [{
+                "type": "archive",
+                "url": "https://github.com/alainm23/byte/archive/0.2.5.tar.gz",
+                "sha256": "f0bc09d3706e17dbd30980bacf199c11a91296985b8934eb4bfb50597098d0e7"
+            }]
         }
     ]
 }

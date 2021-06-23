@@ -1,0 +1,30 @@
+From 6c544980ad03bb4f2e7e13fca7700db01b107b83 Mon Sep 17 00:00:00 2001
+From: hanaral <58219504+hanaral@users.noreply.github.com>
+Date: Tue, 27 Apr 2021 15:46:08 +0100
+Subject: [PATCH] fixes missing <ul> tags that cause build to fail
+
+---
+ data/com.github.alainm23.byte.appdata.xml.in | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+diff --git a/data/com.github.alainm23.byte.appdata.xml.in b/data/com.github.alainm23.byte.appdata.xml.in
+index 46579bc..e1e2d38 100644
+--- a/data/com.github.alainm23.byte.appdata.xml.in
++++ b/data/com.github.alainm23.byte.appdata.xml.in
+@@ -34,10 +34,12 @@
+         </ul>
+         <p>Special thanks to 'Eddie Vassallo' for becoming our new Gold Tier Patrons and supporting the development of Byte.</p>
+         <p>🌟️ Thank you to our silver members for supporting the development of Byte. 🌟️</p>
+-        <li>Cal</li>
+-        <li>I Sutter</li>
+-        <li>The Linux Experiment</li>
+-        <li>Wout</li>
++        <ul>
++          <li>Cal</li>
++          <li>I Sutter</li>
++          <li>The Linux Experiment</li>
++          <li>Wout</li>
++        </ul>
+       </description>
+     </release>
+ 

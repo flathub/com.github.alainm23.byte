@@ -1,9 +1,9 @@
 {
     "app-id": "com.github.alainm23.byte",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno-19.08",
+    "base-version": "juno-20.08",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "40",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.alainm23.byte",
     "finish-args": [
@@ -12,8 +12,7 @@
         "--socket=x11",
         "--socket=wayland",
         "--filesystem=home",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
+        "--metadata=X-DConf=migrate-path=/com/github/alainm23/byte/",
         "--talk-name=org.gtk.vfs",
         "--talk-name=org.gtk.vfs.*",
         "--socket=pulseaudio",
@@ -41,8 +40,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://github.com/taglib/taglib/archive/v1.11.1.tar.gz",
-                "sha256": "b6d1a5a610aae6ff39d93de5efd0fdc787aa9e9dc1e7026fa4c961b26563526b"
+                "url": "https://github.com/taglib/taglib/archive/v1.12.tar.gz",
+                "sha256": "b5a56f78a8bd962aaaec992b25a031f541b949b6eb30aa232bd6d5fa17cf8fa8"
             }]
         },
         {
@@ -55,8 +54,12 @@
             },
             "sources": [{
                 "type": "archive",
-                "url": "https://github.com/alainm23/byte/archive/0.3.1.tar.gz",
-                "sha256": "a55449f7869b999517495154bdb31474e9b04c1e30ba8f8b8b0f6eef6306527c"
+                "url": "https://github.com/alainm23/byte/archive/0.4.2.tar.gz",
+                "sha256": "ea70db7a30f4a6bd4f252016f7cb8359d5b0c250a315ee5cce53e79bc0be055c"
+            },
+            {
+                "type": "patch",
+                "path": "appdata.patch"
             }]
         }
     ]

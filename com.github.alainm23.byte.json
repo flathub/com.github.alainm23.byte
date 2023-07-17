@@ -31,6 +31,7 @@
         "*.a"
     ],
     "modules": [
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "taglib",
             "buildsystem": "cmake-ninja",

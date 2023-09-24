@@ -1,15 +1,16 @@
 {
     "app-id": "com.github.alainm23.byte",
     "base": "io.elementary.BaseApp",
-    "base-version": "juno-21.08",
+    "base-version": "juno-22.08",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "command": "com.github.alainm23.byte",
     "finish-args": [
+        "--device=dri",
         "--share=network",
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=home",
         "--metadata=X-DConf=migrate-path=/com/github/alainm23/byte/",
@@ -30,6 +31,7 @@
         "*.a"
     ],
     "modules": [
+        "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "taglib",
             "buildsystem": "cmake-ninja",
@@ -39,8 +41,8 @@
             ],
             "sources": [{
                 "type": "archive",
-                "url": "https://github.com/taglib/taglib/archive/v1.12.tar.gz",
-                "sha256": "b5a56f78a8bd962aaaec992b25a031f541b949b6eb30aa232bd6d5fa17cf8fa8"
+                "url": "https://github.com/taglib/taglib/archive/v1.13.1.tar.gz",
+                "sha256": "c8da2b10f1bfec2cd7dbfcd33f4a2338db0765d851a50583d410bacf055cfd0b"
             }]
         },
         {

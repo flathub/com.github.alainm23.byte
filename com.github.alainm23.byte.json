@@ -15,7 +15,7 @@
         "--filesystem=home",
         "--metadata=X-DConf=migrate-path=/com/github/alainm23/byte/",
         "--talk-name=org.gtk.vfs.*",
-        "--socket=pulseaudio",
+        "--socket=pulseaudio"
     ],
     "cleanup": [
         "/include",

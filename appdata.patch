@@ -1,14 +1,14 @@
-From 6c544980ad03bb4f2e7e13fca7700db01b107b83 Mon Sep 17 00:00:00 2001
-From: hanaral <58219504+hanaral@users.noreply.github.com>
-Date: Tue, 27 Apr 2021 15:46:08 +0100
-Subject: [PATCH] fixes missing <ul> tags that cause build to fail
+From 398c72431347ba11ffbf923865e77e85e4249304 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Tue, 29 Oct 2024 22:25:00 +0300
+Subject: [PATCH] Update appdata
 
 ---
- data/com.github.alainm23.byte.appdata.xml.in | 10 ++++++----
- 1 file changed, 6 insertions(+), 4 deletions(-)
+ data/com.github.alainm23.byte.appdata.xml.in | 42 +++++++++---------------------------------
+ 1 file changed, 9 insertions(+), 33 deletions(-)
 
 diff --git a/data/com.github.alainm23.byte.appdata.xml.in b/data/com.github.alainm23.byte.appdata.xml.in
-index 46579bc..e1e2d38 100644
+index 46579bc..046f8b1 100644
 --- a/data/com.github.alainm23.byte.appdata.xml.in
 +++ b/data/com.github.alainm23.byte.appdata.xml.in
 @@ -34,10 +34,12 @@
@@ -28,3 +28,47 @@ index 46579bc..e1e2d38 100644
        </description>
      </release>
  
+@@ -202,37 +204,11 @@
+       <image>https://raw.githubusercontent.com/alainm23/byte/master/data/screenshot/screenshot-02.png</image>
+     </screenshot>
+   </screenshots>
+-  <content_rating type="oars-1.1">
+-    <content_attribute id="violence-cartoon">none</content_attribute>
+-    <content_attribute id="violence-fantasy">none</content_attribute>
+-    <content_attribute id="violence-realistic">none</content_attribute>
+-    <content_attribute id="violence-bloodshed">none</content_attribute>
+-    <content_attribute id="violence-sexual">none</content_attribute>
+-    <content_attribute id="violence-desecration">none</content_attribute>
+-    <content_attribute id="violence-slavery">none</content_attribute>
+-    <content_attribute id="violence-worship">none</content_attribute>
+-    <content_attribute id="drugs-alcohol">none</content_attribute>
+-    <content_attribute id="drugs-narcotics">none</content_attribute>
+-    <content_attribute id="drugs-tobacco">none</content_attribute>
+-    <content_attribute id="sex-nudity">none</content_attribute>
+-    <content_attribute id="sex-themes">none</content_attribute>
+-    <content_attribute id="sex-homosexuality">none</content_attribute>
+-    <content_attribute id="sex-prostitution">none</content_attribute>
+-    <content_attribute id="sex-adultery">none</content_attribute>
+-    <content_attribute id="sex-appearance">none</content_attribute>
+-    <content_attribute id="language-profanity">none</content_attribute>
+-    <content_attribute id="language-humor">none</content_attribute>
+-    <content_attribute id="language-discrimination">none</content_attribute>
+-    <content_attribute id="social-chat">none</content_attribute>
+-    <content_attribute id="social-info">mild</content_attribute>
+-    <content_attribute id="social-audio">none</content_attribute>
+-    <content_attribute id="social-location">none</content_attribute>
+-    <content_attribute id="social-contacts">none</content_attribute>
+-    <content_attribute id="money-purchasing">none</content_attribute>
+-    <content_attribute id="money-gambling">none</content_attribute>
+-  </content_rating>
+   <developer_name>Alain M.</developer_name>
++  <content_rating type="oars-1.1" />
++  <launchable type="desktop-id">com.github.alainm23.byte.desktop</launchable>
+   <url type="homepage">https://github.com/alainm23/byte</url>
++  <url type="vcs-browser">https://github.com/alainm23/byte</url>
+   <url type="bugtracker">https://github.com/alainm23/byte/issues</url>
+   <url type="donation">https://www.patreon.com/alainm23</url>
+   <url type="help">https://www.patreon.com/alainm23</url>
+--
+libgit2 1.7.2
+

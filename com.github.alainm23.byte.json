@@ -15,8 +15,7 @@
         "--filesystem=home",
         "--metadata=X-DConf=migrate-path=/com/github/alainm23/byte/",
         "--talk-name=org.gtk.vfs.*",
-        "--socket=pulseaudio",
-        "--talk-name=org.gnome.SettingsDaemon.MediaKeys"
+        "--socket=pulseaudio"
     ],
     "cleanup": [
         "/include",

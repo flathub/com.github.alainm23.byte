@@ -40,12 +40,6 @@
         "shared-modules/libsoup/libsoup-2.4.json",
         {
             "name": "libgee",
-            "build-options" : {
-                "make-install-args" : [
-                    "girdir=/app/share/gir-1.0",
-                    "typelibdir=/app/lib/girepository-1.0"
-                ]
-            },
             "sources": [
                 {
                     "type": "archive",
@@ -86,7 +80,8 @@
                 "path": "appdata.patch"
             }],
             "post-install" : [
-                "mkdir -p /app/share/icons/hicolor/scalable/apps && mv /app/share/icons/hicolor/128x128@2/apps/${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
+                "mkdir -p /app/share/icons/hicolor/scalable/apps",
+                "mv /app/share/icons/hicolor/128x128@2/apps/${FLATPAK_ID}.svg /app/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg",
                 "find /app/share/icons/hicolor -type f -not -path \"*scalable*\" -not -path \"*actions*\" -name \"*.svg\" -delete"
             ]
         }

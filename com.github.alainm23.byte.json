@@ -39,20 +39,6 @@
     "modules": [
         "shared-modules/libsoup/libsoup-2.4.json",
         {
-            "name": "taglib",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DBUILD_SHARED_LIBS=ON",
-                "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
-            ],
-            "sources": [{
-                "type": "archive",
-                "url": "https://github.com/taglib/taglib/archive/v1.13.1.tar.gz",
-                "sha256": "c8da2b10f1bfec2cd7dbfcd33f4a2338db0765d851a50583d410bacf055cfd0b"
-            }]
-        },
-        {
             "name": "byte",
             "buildsystem": "meson",
             "build-options": {
